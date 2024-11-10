@@ -1,0 +1,19 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Ordenar Números";
+}
+
+<h1>Ordenar Números</h1>
+
+<form method="post" asp-page-handler="Ordenar">
+    <label for="numeros">Ingresa los números (separados por comas):</label>
+    <input type="text" id="numeros" name="numeros" required />
+    <button type="submit">Ordenar</button>
+</form>
+
+@if (Model.Ordenados != null)
+{
+    <h2>Números Ordenados:</h2>
+    <p>@Model.Ordenados</p>
+}
