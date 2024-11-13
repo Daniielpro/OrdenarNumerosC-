@@ -26,3 +26,36 @@ Follow these steps to get a local copy of the project up and running:
 1. **Clone the repository**
    ```bash
    git clone https://github.com/daniielpro10/ordenar-numeros.git
+
+ 
+## Local Execution
+
+To run the project locally, follow these steps:
+
+1. Open terminal from the root folder of the project.
+
+2. Install the dependencies if necessary with the command.
+   ````bash
+   dotnet restore 
+
+2. Issue the following command
+   ````bash
+   dotnet run
+
+3. Open the terminal: http://localhost:8083/
+
+## Running Dcoker
+
+To run the project using Docker, follow these steps:
+
+1. Open terminal from the root folder of the project.
+
+2. Issue the following command
+   ````bash
+   docker build -t username/appname .
+
+3. Issue the following command
+   ````bash
+   docker run -d -p 8083:8083 username/nameapp
+
+
